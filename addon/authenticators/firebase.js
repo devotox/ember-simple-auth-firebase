@@ -37,13 +37,15 @@ export default Base.extend({
 		password,
 		options: {
 			provider = 'password',
-			redirect = false
+			redirect = false,
+			scope = null,
+			p = null
 		} = {}
 	} = {}) {
 		let firebase = this.get('firebase');
 
 		let params = provider !== 'password'
-			? [this.provider(provider)]
+			? [p = this.provider(provider)]
 			: [email, password];
 
 		let signInFunction = provider === 'password'
@@ -52,8 +54,21 @@ export default Base.extend({
 				? 'signInWithRedirect'
 				: 'signInWithPopup';
 
-		let { credential, user: { displayName, photoURL } } = await firebase.auth()[signInFunction](...params);
-		return { credential, user: { displayName, email, photoURL } };
+		scope && scope.split(',').forEach(p.addScope.bind(p));
+
+		try {
+			let data = await firebase.auth()[signInFunction](...params);
+			return this.normalizeUserData(data);
+		}
+		catch(e) {
+			console.error(e);
+			throw e;
+		}
+	},
+
+	normalizeUserData(data) {
+		let { credential, user: { displayName, email, photoURL, refreshToken, uid, isAnonymous, emailVerified } } = data;
+		return { credential, refreshToken, user: { displayName, email, photoURL, uid, isAnonymous, emailVerified } };
 	},
 
 	async restore(credentials) {
