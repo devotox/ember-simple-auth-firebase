@@ -57,8 +57,6 @@ export default Base.extend({
 	},
 
 	async restore(credentials) {
-		console.log(credentials);
-
 		try {
 			await this.authStateChanged();
 		}
