@@ -18,7 +18,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.3.0",
+    "eslint-plugin-ember-suave": "^1.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -37,7 +38,9 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
+    "ember-simple-auth": "^1.4.0",
     "ember-source": "~2.15.0",
+    "emberfire": "^2.0.8",
     "loader.js": "^4.2.3"
   },
   "engines": {
