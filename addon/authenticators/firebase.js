@@ -58,6 +58,7 @@ export default Base.extend({
 
 		try {
 			let data = await firebase.auth()[signInFunction](...params);
+			data = data || await firebase.auth().getRedirectResult();
 			return this.normalizeUserData(data);
 		}
 		catch(e) {
@@ -85,7 +86,13 @@ export default Base.extend({
 	async authStateChanged() {
 		return new RSVP.Promise((resolve, reject) => {
 			let firebase = this.get('firebase');
-			firebase.auth().onAuthStateChanged(resolve, reject);
+			let unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+				unsubscribe();
+				resolve(user);
+			}, (error) => {
+				unsubscribe();
+				reject(error);
+			});
 		});
 	},
 
