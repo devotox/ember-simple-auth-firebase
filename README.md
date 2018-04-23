@@ -23,6 +23,10 @@ ember install ember-simple-auth-firebase
 Usage
 ------------------------------------------------------------------------------
 
+* `ember install emberfire`
+* `ember install ember-simple-auth`
+* `ember install ember-simple-auth-firebase`
+
 Options: [Ember Simple Auth](https://github.com/simplabs/ember-simple-auth)
 
 Contributing
