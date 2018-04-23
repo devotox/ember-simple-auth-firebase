@@ -1,4 +1,5 @@
 import FirebaseAuthorizer from '../authorizers/firebase';
+
 import FirebaseAuthenticator from '../authenticators/firebase';
 
 export function initialize(application) {
@@ -7,7 +8,7 @@ export function initialize(application) {
 }
 
 export default {
+	initialize,
 	name: 'firebase-auth',
-	before: 'ember-simple-auth',
-	initialize
+	before: 'ember-simple-auth'
 };

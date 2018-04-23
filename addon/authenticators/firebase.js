@@ -62,7 +62,7 @@ export default Base.extend({
 			return this.normalizeUserData(data);
 		}
 		catch(e) {
-			console.error(e);
+			console.error(e); // eslint-disable-line
 			throw e;
 		}
 	},
