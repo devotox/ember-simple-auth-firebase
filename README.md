@@ -10,7 +10,7 @@
 ember-simple-auth-firebase
 ==============================================================================
 
-Simple Auth using the [Ember Simple Auth](https://github.com/simplabs/ember-simple-auth) and [Emberfire](https://github.com/firebase/emberfire)
+Application Authorization combining [Ember Simple Auth](https://github.com/simplabs/ember-simple-auth) and [Emberfire](https://github.com/firebase/emberfire)
 
 Installation
 ------------------------------------------------------------------------------
