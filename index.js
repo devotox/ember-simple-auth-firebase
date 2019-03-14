@@ -1,5 +1,7 @@
 'use strict';
 
+const { name } = require('./package');
+
 module.exports = {
-  name: 'ember-simple-auth-firebase'
+    name
 };
