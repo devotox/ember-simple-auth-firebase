@@ -3,8 +3,8 @@
 [![Coverage Status](https://codecov.io/gh/devotox/ember-simple-auth-firebase/branch/master/graph/badge.svg)](https://codecov.io/gh/devotox/ember-simple-auth-firebase)
 [![NPM Version](https://badge.fury.io/js/ember-simple-auth-firebase.svg)](http://badge.fury.io/js/ember-simple-auth-firebase)
 [![NPM Downloads](https://img.shields.io/npm/dm/ember-simple-auth-firebase.svg)](https://www.npmjs.org/package/ember-simple-auth-firebase)
-[![Dependency Status](https://david-dm.org/poetic/ember-simple-auth-firebase.svg)](https://david-dm.org/poetic/ember-simple-auth-firebase)
-[![DevDependency Status](https://david-dm.org/poetic/ember-simple-auth-firebase/dev-status.svg)](https://david-dm.org/poetic/ember-simple-auth-firebase#info=devDependencies)
+[![Dependency Status](https://david-dm.org/devotox/ember-simple-auth-firebase.svg)](https://david-dm.org/devotox/ember-simple-auth-firebase)
+[![DevDependency Status](https://david-dm.org/devotox/ember-simple-auth-firebase/dev-status.svg)](https://david-dm.org/devotox/ember-simple-auth-firebase#info=devDependencies)
 [![Greenkeeper](https://badges.greenkeeper.io/devotox/ember-simple-auth-firebase.svg)](https://greenkeeper.io/)
 
 ember-simple-auth-firebase
