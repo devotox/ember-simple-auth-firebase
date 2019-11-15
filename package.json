@@ -65,7 +65,7 @@
     "ember-source-channel-url": "2.0.1",
     "ember-try": "1.2.1",
     "emberfire": "2.0.10",
-    "eslint-plugin-ember": "6.10.0",
+    "eslint-plugin-ember": "7.5.0",
     "eslint-plugin-node": "10.0.0",
     "loader.js": "4.7.0"
   },
